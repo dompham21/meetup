@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Meetup.com</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/banner.css">
+  <link rel="stylesheet" type="text/css" href="./css/nav.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/content.css">
+  <link rel="stylesheet" type="text/css" href="./css/wrapper.css">
+  <link rel="stylesheet" type="text/css" href="./css/footer.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <div class="banner">
+     <p style="font-size: 14px!important"><span>COVID-19 advisory</span> For the health and safety of Meetup communities, we're advising that all events be hosted online in the coming weeks. <a href="#" target="_blank">Learn more</a></p>
+  </div>
+  <div class="nav">
+    <div class="navItem logo">
+      <a href="#">
+        <img src="https://www.meetup.com/mu_static/fr-FR/logo--script.004ada05.svg">
+      </a>
+    </div>
+    <div class="navItem createMeetup">
+      <a href="#">
+        <span>Créer un groupe</span>
+      </a>
+    </div>
+    <div class="navItem login">
+      <a href="#">
+        <span>Connexion</span>
+      </a>
+    </div>
+    <div class="navItem signUp">
+      <a href="#">
+        <span>Inscription</span>
+      </a>
+    </div>
+  </div>
+  <div class="main" width="100%" height="512">
+    <video id="myVideo" muted autoplay loop>
+      <source src="https://www.meetup.com/mu_static/fr-FR/video.dddafbfe.mp4" type="video/mp4">
+    </video>
+    <div class="overlap">
+      <h1 style="font-size:42px">Le monde vous tend les bras</h1>
+      <p style="font-size:20px">Rejoignez in groupe local pour renconter du monde, tester une noivelle activite ou partager vos passions</p>
+      <button id="btn-join">Rejoindre Meetup</button>
+    </div>   
+      <ul class="list-item">
+        <li>
+          <a href="#">
+            <span>Rejoindre un mouvement</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Cuisiner</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Courir un marathon</span>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Creer une appli</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Faire de a voile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Pratiquer une langue</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <div class="content">
+    <div class="evt-near" style="margin-bottom:20px">
+      <h2 style="margin:0">Événements à proximité</h2>
+      <p style="margin-top:7px">Découvrez ce qui se passe prochainement près de chez vous.</p>
+      <a href="#" class="showMore">Voir tout</a>
+    </div>
+    <div class="listCourse" id="listCourse">
+      <div class="course item first" >
+        <div class="course info">Iun. 13 avr., 09:30 UTC+2</div>
+        <div class="course name">
+          <h3>
+            Coding Live Stream - Creez une application Angular #1
+          </h3> 
+        </div>
+        <div class="course title">Yes We Code !</div>
+        <div class="course status">
+         <img style="margin-right:5px" src="./images/globe.png">
+              Online event</div>
+        <div class="course coutParticiper">4 participants</div>
+        <button class="course participer">Participer</button>
+      </div>
+      <div class="course item second" >
+        <div class="course info">Iun. 13 avr., 09:30 UTC+2</div>
+        <div class="course name">
+          <h3>
+            Coding Live Stream - Creez une application Angular #2
+          </h3> 
+        </div>
+        <div class="course title">Yes We Code !</div>
+        <div class="course status">
+         <img style="margin-right:5px" src="./images/globe.png">
+              Online event</div>
+        <div class="course coutParticiper">4 participants</div>
+        <button class="course participer">Participer</button>
+      </div>
+      <div class="course item third">
+        <div class="course info">Iun. 13 avr., 09:30 UTC+2</div>
+        <div class="course name">
+          <h3>
+            Coding Live Stream - Creez une application Angular #3
+          </h3> 
+        </div>
+        <div class="course title">Yes We Code !</div>
+        <div class="course status">
+         <img style="margin-right:5px" src="./images/globe.png">
+              Online event</div>
+        <div class="course coutParticiper">4 participants</div>
+        <button class="course participer">Participer</button>
+      </div>
+      <div class="course item hide">
+        <div class="course info">Iun. 13 avr., 09:30 UTC+2</div>
+        <div class="course name">
+          <h3>
+            Coding Live Stream - Creez une application Angular #4
+          </h3> 
+        </div>
+        <div class="course title">Yes We Code !</div>
+        <div class="course status">
+         <img style="margin-right:5px" src="./images/globe.png">
+              Online event</div>
+        <div class="course coutParticiper">4 participants</div>
+        <button class="course participer">Participer</button>   
+      </div>
+     
+    </div>
+    <button class="moveLeftBtn" onclick="left()"></button>
+    <button class="moveRightBtn" onclick="right()"></button>
+    
+    </div>
+  <div class="wrapper">
+    <h2>Catégories</h2>
+    <span>Parcourez les groupes par thème.</span>
+    <div class="gridList">
+      <ul class="girdList-wrapper" style="list-style: none;">
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/7/600_450131943.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/9/c/600_450131932.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/e/600_450131950.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/c/600_450131948.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"   style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/9/b/600_450131931.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/a/600_450131946.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/1/600_450131937.jpeg&quot;); background-position: center center;"  ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/f/600_450131951.jpeg&quot;); background-position: center center;" ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/3/600_450131939.jpeg&quot;); background-position: center center;" ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/6/600_450131942.jpeg&quot;); background-position: center center;" ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/5/600_450131941.jpeg&quot;); background-position: center center;" ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/4/600_450131940.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/4/8/3/f/600_450858495.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/2/600_450131938.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/9/5/600_450131925.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/8/8/600_450131912.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/9/6/600_450131926.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/9/a/600_450131930.jpeg&quot;); background-position: center center;" ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/9/600_450131945.jpeg&quot;); background-position: center center;"  ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/9/9/600_450131929.jpeg&quot;); background-position: center center;" ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card"  style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/9/e/600_450131934.jpeg&quot;); background-position: center center;"></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/a/b/600_450131947.jpeg&quot;); background-position: center center;" ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        <li class="girdList-Item">
+          <div class="card" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/2/e/9/7/600_450131927.jpeg&quot;); background-position: center center;" ></div>
+          <h4 class="girdList-title">Nature et aventure</h4>
+        </li>
+        
+
+      </ul>
+    </div>
+ </div>
+ <div class="footer">
+    <div class="stripe-howMeetupWorks">
+      <h2 style="font-size:34px;text-align: center;padding-top: 60px">How to use Meetup?</h2>
+      <div class="howMeetupWorks">
+       <div class="find">
+         <div class="search" >
+           <img src="./images/search.png" style="width: 80px; height: 80px;padding-bottom: 12px;box-sizing: content-box;">
+         </div>
+         <div class="find-item">
+           <h3 style="font-size: 26px;margin:0">Discover groups</h3>
+           <p style="margin-bottom: 20px!important;margin:0">Find out who is organizing nearby events for all the things you love.</p>  
+           <a href="#" class="join" style="text-decoration: none;">
+              <span style="vertical-align: inherit;color: #00a2c7!important;">Join Meetup</span> 
+              <img src="./images/arrow-right.png" style="width:20px;height:20px;padding-left:20px;box-sizing: content-box;">
+           </a>
+         </div>
+       </div>
+       <div class="create">
+         <div class="plus" >
+           <img src="./images/plus.png" style="width: 72px; height: 72px;padding-bottom: 30px;box-sizing: content-box;">
+         </div>
+         <div class="create-item">
+           <h3 style="font-size: 26px;margin:0">Create a group</h3>
+           <p style="margin-bottom: 20px!important;margin:0">Create your Meetup group, and join millions of members.</p>  
+           <a href="#" class="start" style="text-decoration: none;">
+              <span style="vertical-align: inherit;color: #00a2c7!important;">Start</span> 
+              <img src="./images/arrow-right.png" style="width:20px;height:20px;padding-left:20px;box-sizing: content-box;">
+           </a>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="stripe-getTheApp">
+      <div class="getTheApp">
+        <div class="howDownload">
+          <h2 style="margin:0;">Download the app</h2>
+          <a href="#" style="text-decoration: none;">
+            <span style="vertical-align: inherit;color: #00a2c7!important;">Find out more</span> 
+            <img src="./images/arrow-right-white.png" style="width:20px;height:20px;padding-left:20px;box-sizing: content-box;">
+          </a>
+          <div class="download-link">
+            <a href="#" class="getTheApp-ios" style="text-decoration: none;">
+            <img src="https://www.meetup.com/mu_static/fr-FR/download_fr.c9f9d873.png" style="width:160px;height:50px;padding-top:20px;margin-top:20px;box-sizing: content-box;">
+          </a>
+          <a href="#" class="getTheApp-android" style="text-decoration: none;">
+            <img src="https://www.meetup.com/mu_static/fr-FR/download_fr.159904ff.png" style="width:160px;height:50px;padding-top:20px;margin-top:20px;box-sizing: content-box;">
+          </a>
+          </div>  
+        </div>
+        <img src="https://www.meetup.com/mu_static/fr-FR/app_download.1a368bb6.png" style=" width:227.438px;height:300px;margin-bottom: -20px;">
+      </div>
+    </div>
+    <div class="stripe-footerMain">
+      <div class="bound">
+        <div class="chunk">
+          <a href="#" style="color: #ffffff;">
+            <p>Create a group</p>
+          </a>
+        </div>
+        <div class="footerMain">
+          <div class="myAccount">
+            <h4>My account</h4>
+            <ul>
+              <li>Registration</li>
+              <li>Sign in</li>
+              <li>Help</li>
+            </ul>
+          </div>
+          <div class="discover">
+            <h4>Discover</h4>
+            <ul>
+              <li>Groups</li>
+              <li>Calendar</li>
+              <li>Themes</li>
+              <li>Cities</li>
+            </ul>
+          </div>
+          <div class="meetup">
+            <h4>Meetup</h4>
+            <ul>
+              <li>About Meetup</li>
+              <li>Pro Meetup</li>
+              <li>Careers</li>
+              <li>Apps</li>
+              <li>Blog</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+          <div class="followUs" style="width:360px;height:362px;">
+            <h4>Follow us</h4>
+            <div class="social">
+              <a href="#">
+                <img src="./images/facebook.png">
+              </a>
+              <a href="#">
+                <img src="./images/twitter.png">
+              </a>
+              <a href="#">
+                <img src="./images/youtube.png">
+              </a>
+              <a href="#">
+                <img src="./images/instagram.png">
+              </a>
+            </div>
+            <div class="selectLanguage-getApp">
+              <div class="selectLanguage">
+                <select name="languagePicker" id="languagePicker" style="background: url(./images/arrowdown.png)  #0f1721 no-repeat 96.5%;" >
+                   <option value="fr-FR">Français</option>
+                  <option value="en-US">English</option>
+                  <option value="de-DE">Deutsch</option>
+                  <option value="en-AU">English-Australia</option>
+                  <option value="es">Español</option>
+                  <option value="es-ES">Español (España)</option>
+                  <option value="it-IT">Italiano</option>
+                  <option value="ja-JP">日本語</option>
+                  <option value="ko-KR">한국어</option>
+                  <option value="nl-NL">Nederlands</option>
+                  <option value="pt-BR">Português</option>
+                  <option value="pl-PL">Polski</option>
+                  <option value="ru-RU">Русский</option>
+                  <option value="th-TH">ไทย</option>
+                  <option value="tr-TR">Türkçe</option>
+                </select>
+              </div>
+              <div class="getApp">
+                <a href="#" style="text-decoration:none;">
+                  <img src="https://www.meetup.com/mu_static/en-US/download_en.b85d892d.png" style="width:160px;height:48.587px;">
+                </a>
+                <a href="#" style="text-decoration:none;">
+                  <img src="https://www.meetup.com/mu_static/en-US/download_en.cf6dad40.png" style="width:160px;height:48.587px;padding-left: 20px;box-sizing: content-box;">
+                </a>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div class="lastFooter">
+      <div class="info-meetup">
+        <p style="margin:0 0 20px 0">© 2020 Meetup LLC</p>
+        <ul>
+          <li>
+            <span>Terms of Service</span>
+          </li>
+          <li>
+            <span>Privacy Policy</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+ </div>
+ <script type="text/javascript"> 
+  window.left = function() {
+        if($('.course.item.first').hasClass('moveRight1')){
+          $('.course.item.first').removeClass('moveRight1');
+          $('.course.item.first').addClass('moveLeft1');
+        }
+        else{
+          $('.course.item.first').addClass('moveLeft1');
+        } 
+        
+        if($('.course.item.second').hasClass('moveRight2')){
+          $('.course.item.second').removeClass('moveRight2');
+          $('.course.item.second').addClass('moveLeft2');
+        }
+        else{
+          $('.course.item.second').addClass('moveLeft2');
+        } 
+        
+        if($('.course.item.third').hasClass('moveRight3')){
+          $('.course.item.third').removeClass('moveRight3');
+          $('.course.item.third').addClass('moveLeft3');
+        }
+        else{
+          $('.course.item.third').addClass('moveLeft3');
+        } 
+        
+        if($('.course.item.hide').hasClass('moveRight4')){
+          $('.course.item.hide').removeClass('moveRight4');
+          $('.course.item.hide').addClass('moveLeft4');
+        }
+        else{
+          $('.course.item.hide').addClass('moveLeft4');
+        }
+ 
+}
+  window.right = function() {
+        if($('.course.item.first').hasClass('moveLeft1')){
+          $('.course.item.first').removeClass('moveLeft1');
+        }
+        else{
+          $('.course.item.first').addClass('moveRight1');
+        }
+       
+        if($('.course.item.second').hasClass('moveLeft2')){
+          $('.course.item.second').removeClass('moveLeft2');
+        }
+        else{
+          $('.course.item.second').addClass('moveRight2');
+        }
+        
+        if($('.course.item.third').hasClass('moveLeft3')){
+          $('.course.item.third').removeClass('moveLeft3');
+        }
+        else{
+          $('.course.item.third').addClass('moveRight3');
+        }
+
+        if($('.course.item.hide').hasClass('moveLeft4')){
+          $('.course.item.hide').removeClass('moveLeft4');
+        }
+        else{
+          $('.course.item.hide').addClass('moveRight4');
+        }
+ 
+}
+</script>
+ 
+</body>
+</html>
