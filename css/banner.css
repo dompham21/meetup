@@ -1,0 +1,21 @@
+.banner{
+	color: #ffffff;
+	border: 1px solid #000000;
+	height: 61.8px;
+	text-align: center;
+	background: rgba(33,33,33,.85);
+	
+}
+
+.banner a{
+	color: #ffffff ;
+}
+
+.banner span{
+	color: #FFAD43;
+}
+
+.banner p{
+	margin-top:20px;
+}
+

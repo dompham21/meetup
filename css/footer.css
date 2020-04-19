@@ -1,0 +1,147 @@
+
+.stripe-howMeetupWorks {
+	background: #0f1721;
+	color: #ffffff;
+	padding: 10px 0 55px 0;
+}
+
+.howMeetupWorks {
+	display: flex;
+	flex-direction: row;
+	max-width: 1060px;
+	margin: 0 202.8px 0 202.8px;
+	align-items: center;
+	flex-grow: 1;
+	height: 168px;
+}
+
+.find {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.find-item {
+	margin: 0 0 0 20px;
+
+}
+
+.create {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.create-item {
+	margin: 0 0 0 20px;
+}
+
+.stripe-getTheApp {
+	height: 320px;
+}
+.getTheApp {
+	height: 320px;
+	display: flex;
+	flex-direction: row;
+	max-width: 1060px;
+	margin: 0 202.8px 0 202.8px;
+	align-items: center;
+	flex-grow: 1;
+	justify-content: space-around;
+}
+
+.stripe-footerMain {
+	background: #353e48;
+	color: #ffffff;
+}
+
+.bound {
+	display: flex;
+	flex-direction: column;
+	max-width: 1060px;
+	margin: 0 202.8px 0 202.8px;
+}
+
+.footerMain {
+	font-size: 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-top: 1px solid hsla(0,0%,100%,.2);
+	padding: 40px 0px 20px 0px;
+}
+
+.footerMain ul {
+	list-style: none;
+	padding: 0;
+}
+
+.footerMain ul li{
+	padding: 0 16px 16px 0;
+	width:236px;
+	height: 38.4px;
+	color: #C3C5C8!important;
+}
+
+.footerMain h4 {
+	width: 220px;
+	height: 24px;
+}
+
+.chunk {
+	box-sizing: content-box;
+	height: 44px;
+	padding: 40px 0 40px 0;
+	margin: 0;
+}
+
+#languagePicker {
+	font-size: 16px;
+	background: #0f1721;
+	color: #ffffff;
+	padding: 20px 80px 20px 20px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	width: 340px;
+	margin: 40px 0 40px 0;
+    -webkit-appearance: none;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.social a{
+	padding-right: 45px;
+}
+
+.lastFooter ul li::after {
+	content: "·";
+	padding:0 10px;
+}
+
+.lastFooter ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.lastFooter {
+	background: #2f363f; 
+}
+
+.info-meetup {
+	max-width: 1060px;
+	margin: 0 202.8px 0 202.8px;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 20px 0 20px 0;
+}
+
+.lastFooter ul li {
+	display: inline;
+}

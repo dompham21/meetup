@@ -1,0 +1,166 @@
+.content {
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+
+.evt-near {
+	position: relative;	
+	padding: 40px 40px 60px 230px;
+	border-top: 1px solid #c6c8c6bd;
+	width: 100%;
+	height: 102px;
+}
+
+.showMore {
+	position: absolute;	
+	text-decoration: none;
+	top: 50px;
+	right: 240px;
+	font-size: 17px;
+	color: #00A2C7;
+}
+
+.listCourse {
+	width: 1073px;
+	height: 256px;
+	overflow: hidden;
+	position: relative;
+	margin:0px 210px 0px 210px;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	justify-content: space-between;
+ 	
+}
+
+.course.item {
+	width: 340px;
+	height: 256px;
+	border: 1px solid #c6c8c6bd;
+	border-radius: 5px;
+	padding: 20px;
+	position: absolute;
+	transition: all 0.3s;
+	transition-timing-function: linear;
+	cursor: pointer;
+	
+
+}
+
+.course.item:hover {
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+	transform: scale(1.01);
+}
+
+.course.item.first {
+	left:0;
+}
+
+.course.item.second {
+  	left: 366.666666667px;
+
+}
+
+.course.item.third {
+	left: 733.333333333px;
+}
+
+.course.item.hide {
+	left: 1100px;
+}
+
+.course .info {
+	color: #4cc3e8;
+}
+
+.course.name, .title, .status {
+	margin: 10px 0px 10px 0px;
+} 
+
+.course .item .status {
+	margin-bottom: 35px;
+	color: #757575;
+}
+
+.course .coutParticiper {
+	color: #757575;
+}
+
+.course .participer {
+	position: absolute;
+	top:195px;
+	left: 220px;
+	color: #4cc3e8;
+	border: 1px solid #4cc3e8;
+	border-radius: 5px;
+	padding: 10px 20px;
+	background: #ffffff;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.moveLeftBtn {
+	background: url('https://image.flaticon.com/icons/svg/467/467152.svg') no-repeat top left;
+	border: none;
+	width: 40px;
+	height: 40px;
+  	position: absolute;
+  	top: 240px;
+  	left:1292px;
+	cursor: pointer;
+}
+
+.moveRightBtn {
+  	background: url('https://image.flaticon.com/icons/svg/481/481158.svg') no-repeat top left;
+  	border: none;
+	width: 40px;
+	height: 40px;
+  	position: absolute;
+  	top: 240px;
+  	left: 160px;
+	cursor: pointer;
+}
+
+.moveLeftBtn:focus {
+	outline: none;
+}
+
+.moveRightBtn:focus {
+    outline: none;
+}
+
+.moveLeft1 {
+	left: -366.666666667px !important;
+}
+
+.moveLeft2 {
+	left: 0px !important;
+}
+
+.moveLeft3 {
+	left: 366.666666667px !important;
+}
+
+.moveLeft4 {
+	left: 733.333333333px !important;
+}
+
+.moveRight1 {
+	left: 0px !important;
+}
+
+.moveRight2 {
+	left: 366.666666667px !important;
+}
+
+.moveRight3 {
+	left: 733.333333333px !important;
+}
+
+.moveRight4 {
+	left: 1100px !important;
+}
+
+ 

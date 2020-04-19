@@ -1,0 +1,53 @@
+.nav{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 85px;
+	background: #ffffff;
+	align-items: center;
+	font-size: 14px;
+	padding: 0px;
+}
+
+.nav .logo img{
+	width:123px;
+	height: 44px;
+	margin-left: 20px; 
+}
+
+.login a, .signUp a ,.createMeetup a {
+	text-decoration: none;
+}
+
+.nav .createMeetup span{
+	color: #00A2C7;
+	font-weight: bold;
+}
+
+.login {
+	flex-basis: 80px;
+	padding: 0 0 0 12px;
+}
+
+.signUp {
+	flex-basis: 85px;
+	padding: 0 0 0 12px ;
+}
+
+.createMeetup {
+	flex-basis: 135px;
+	border-right: 1px solid #cccccc;
+	padding: 0 12px;
+}
+
+.logo{
+	flex-grow: 1;
+}
+
+.signUp span {
+	color: #757575;
+}
+
+.login span {
+	color: #757575;
+}

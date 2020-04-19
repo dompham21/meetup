@@ -1,0 +1,40 @@
+.wrapper {
+ 	width: 1100px;
+	overflow: hidden;
+	margin: 20px 210px 0px 210px;
+	padding: 0;
+}
+
+.girdList {
+	width: 1060px;
+
+}
+
+.girdList-wrapper{
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}	
+
+.girdList-Item {
+
+ 	width: 269px;
+ 	height: 208px;
+ 	padding: 0 16px 16px 0;
+}
+
+.card {
+	padding: 20px 20px 0;
+	background-size: cover;
+ 	border: 1px solid rgba(46,62,72,.12);
+ 	border-radius: 8px;
+	width:253px;
+	height: 160px;
+}
+
+.girdList-title {
+	margin-top: 8px;
+    padding: 0;
+}
